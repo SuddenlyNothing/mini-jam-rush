@@ -4,6 +4,8 @@
 
 [node name="StopSign" type="RigidBody2D"]
 mass = 50.0
+contacts_reported = 1
+contact_monitor = true
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

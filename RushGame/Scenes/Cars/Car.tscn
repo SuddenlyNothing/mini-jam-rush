@@ -36,6 +36,8 @@ script = ExtResource( 3 )
 [node name="FrontWheel" type="RigidBody2D" parent="."]
 position = Vector2( 13.5, 9 )
 physics_material_override = ExtResource( 4 )
+contacts_reported = 1
+contact_monitor = true
 angular_damp = 5.0
 
 [node name="Sprite" type="Sprite" parent="FrontWheel"]
@@ -49,6 +51,8 @@ node_b = NodePath("..")
 [node name="BackWheel" type="RigidBody2D" parent="."]
 position = Vector2( -13.5, 9 )
 physics_material_override = ExtResource( 4 )
+contacts_reported = 1
+contact_monitor = true
 angular_damp = 5.0
 
 [node name="Sprite" type="Sprite" parent="BackWheel"]
