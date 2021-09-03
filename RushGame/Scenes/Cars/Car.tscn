@@ -25,7 +25,6 @@ fill_mesh_offset = 0.0
 render_offset = 0.0
 
 [node name="Car" type="RigidBody2D"]
-mass = 1000.0
 contacts_reported = 4
 contact_monitor = true
 script = ExtResource( 3 )
@@ -34,33 +33,31 @@ script = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
-[node name="Wheel" type="RigidBody2D" parent="."]
-position = Vector2( -13.5, 9 )
-physics_material_override = ExtResource( 4 )
-angular_damp = 5.0
-
-[node name="Sprite" type="Sprite" parent="Wheel"]
-
-[node name="PinJoint2D" type="PinJoint2D" parent="Wheel"]
-node_a = NodePath("../..")
-node_b = NodePath("..")
-softness = 2.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wheel"]
-
-[node name="Wheel2" type="RigidBody2D" parent="."]
+[node name="FrontWheel" type="RigidBody2D" parent="."]
 position = Vector2( 13.5, 9 )
 physics_material_override = ExtResource( 4 )
 angular_damp = 5.0
 
-[node name="Sprite" type="Sprite" parent="Wheel2"]
+[node name="Sprite" type="Sprite" parent="FrontWheel"]
 
-[node name="PinJoint2D" type="PinJoint2D" parent="Wheel2"]
+[node name="PinJoint2D" type="PinJoint2D" parent="FrontWheel"]
 node_a = NodePath("../..")
 node_b = NodePath("..")
-softness = 2.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wheel2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FrontWheel"]
+
+[node name="BackWheel" type="RigidBody2D" parent="."]
+position = Vector2( -13.5, 9 )
+physics_material_override = ExtResource( 4 )
+angular_damp = 5.0
+
+[node name="Sprite" type="Sprite" parent="BackWheel"]
+
+[node name="PinJoint2D" type="PinJoint2D" parent="BackWheel"]
+node_a = NodePath("../..")
+node_b = NodePath("..")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackWheel"]
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="."]
 script = ExtResource( 1 )

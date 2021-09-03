@@ -1,18 +1,18 @@
 extends RigidBody2D
 class_name car
 
-onready var wheel := $Wheel
-onready var wheel2 := $Wheel2
+onready var front_wheel := $FrontWheel
+onready var back_wheel := $BackWheel
 
 export(float) var wheel_torque : float = 1000
-export(float) var torque : float = 5000
+export(float) var torque : float = 1000
 
 func _physics_process(delta : float) -> void:
 	var horizontal := Input.get_action_strength("right") - Input.get_action_strength("left")
-	set_applied_torque(torque * horizontal)
-	var gas := Input.get_action_strength("space") - Input.get_action_strength("shift")
-	wheel.set_applied_torque(wheel_torque * gas)
-	wheel2.set_applied_torque(wheel_torque * gas)
+#	set_applied_torque(torque * gas)
+#	wheel.set_applied_force(wheel_torque * gas)
+	front_wheel.set_applied_torque(wheel_torque * horizontal)
+	back_wheel.set_applied_torque(wheel_torque * horizontal)
 
 
 func _on_Car_body_entered(body):
