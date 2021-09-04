@@ -5,7 +5,7 @@ onready var front_wheel := $FrontWheel
 onready var back_wheel := $BackWheel
 
 export(float) var wheel_torque : float = 5000
-export(float) var torque : float = 1000
+export(float) var torque : float = 5000
 
 func _physics_process(delta : float) -> void:
 	var horizontal := Input.get_action_strength("right") - Input.get_action_strength("left")

@@ -1,6 +1,5 @@
 [gd_resource type="PhysicsMaterial" format=2]
 
 [resource]
-rough = true
 bounce = 1.0
 absorbent = true

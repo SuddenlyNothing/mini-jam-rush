@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Cars/CarTest.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=5]
 [ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/Objects/StopSign.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Temps/leagscreenshot.PNG" type="Texture" id=8]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -167,10 +168,6 @@ position = Vector2( 11.9596, 339.426 )
 contacts_reported = 0
 contact_monitor = false
 
-[node name="Camera2D" type="Camera2D" parent="CarTest"]
-current = true
-zoom = Vector2( 0.3, 0.3 )
-
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 position = Vector2( -41.3357, -146.731 )
 
@@ -185,3 +182,11 @@ polygon = PoolVector2Array( 19.9514, 542.655, 63.6916, 522.632, 88.9789, 513.562
 
 [node name="StopSign" parent="." instance=ExtResource( 7 )]
 position = Vector2( 72.4098, 358.811 )
+
+[node name="leagscreenshot" type="Sprite" parent="."]
+position = Vector2( 632.354, 679.981 )
+texture = ExtResource( 8 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 388.75, 512.994 )
+current = true
