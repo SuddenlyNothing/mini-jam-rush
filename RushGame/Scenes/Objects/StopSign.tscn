@@ -8,8 +8,10 @@ contacts_reported = 1
 contact_monitor = true
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -2.6 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -24 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, -2.6 )
 polygon = PoolVector2Array( -1, 0, 1, 0, 1, -32, 3, -32, 8, -37, 8, -43, 3, -48, -3, -48, -8, -43, -8, -37, -3, -32, -1, -32 )
