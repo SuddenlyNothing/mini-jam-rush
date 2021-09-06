@@ -11,6 +11,9 @@ script = ExtResource( 3 )
 [node name="ScrollLimitIncreaser" type="Node2D" parent="."]
 position = Vector2( 100000, 100000 )
 
+[node name="ScrollLimitIncreaser2" type="Node2D" parent="."]
+position = Vector2( 100000, -100000 )
+
 [node name="Rural" parent="." instance=ExtResource( 1 )]
 
 [node name="CarPixel" parent="." instance=ExtResource( 2 )]
