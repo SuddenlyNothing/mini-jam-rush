@@ -3,6 +3,7 @@ class_name car
 
 onready var front_wheel := $FrontWheel
 onready var back_wheel := $BackWheel
+onready var car_hit := $CarHit
 
 export(float) var wheel_torque : float = 50000
 export(float) var torque : float = 10000
@@ -15,3 +16,7 @@ func _physics_process(delta : float) -> void:
 		
 	front_wheel.set_applied_torque(wheel_torque * horizontal)
 	back_wheel.set_applied_torque(wheel_torque * horizontal)
+
+
+func _on_Car_body_entered(body):
+	car_hit.play()

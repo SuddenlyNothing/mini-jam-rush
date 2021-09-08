@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Car Hit.mp3-0d7fd79fc7c17cb64327df1f4275769e.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/SFX/Car Hit.mp3"
+dest_files=[ "res://.import/Car Hit.mp3-0d7fd79fc7c17cb64327df1f4275769e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

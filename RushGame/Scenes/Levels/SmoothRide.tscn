@@ -209,6 +209,7 @@ fill_mesh_offset = 0.0
 render_offset = -1.0
 
 [node name="SmoothRide" instance=ExtResource( 1 )]
+music = 1
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="3"]
 

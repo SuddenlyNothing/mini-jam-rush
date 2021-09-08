@@ -557,6 +557,7 @@ _constraints = {
 _next_key = 11
 
 [node name="Endurance" instance=ExtResource( 1 )]
+music = 2
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="4"]
 

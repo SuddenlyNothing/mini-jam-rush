@@ -3,6 +3,7 @@ extends RigidBody2D
 onready var raycast := $BulletPos/RayCast2D
 onready var shot_delay := $ShotDelay
 onready var bullet_pos := $BulletPos
+onready var shot := $Shot
 
 var Bullet := preload("res://Scenes/Objects/Bullet.tscn")
 
@@ -13,6 +14,7 @@ func _process(delta : float) -> void:
 
 
 func shoot() -> void:
+	shot.play()
 	var bullet = Bullet.instance()
 	bullet.position = bullet_pos.global_position
 	bullet.dir = Vector2.LEFT.rotated(rotation)

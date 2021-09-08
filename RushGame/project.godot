@@ -183,6 +183,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Global="*res://Scenes/Globals/Global.tscn"
+Music="*res://Scenes/Globals/Music.tscn"
 
 [display]
 
@@ -213,6 +214,10 @@ texture={
 "size_limit": 0,
 "stream": false,
 "svg/scale": 1.0
+}
+mp3={
+"loop": false,
+"loop_offset": 0
 }
 
 [input]

@@ -331,6 +331,7 @@ _constraints = {
 _next_key = 4
 
 [node name="SmallJump" instance=ExtResource( 1 )]
+music = 1
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="4"]
 

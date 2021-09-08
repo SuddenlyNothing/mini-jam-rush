@@ -3,6 +3,8 @@ extends Control
 export(String, FILE, "*.tscn") var credits
 export(String, FILE, "*.tscn") var play
 
+func _ready() -> void:
+	Music.play_track(0)
 
 
 func _on_Credits_pressed():

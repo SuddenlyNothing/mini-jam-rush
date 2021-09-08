@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/I wanna go fast.mp3-c555393918a5fe67d63a1c6e709e7316.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Music/I wanna go fast.mp3"
+dest_files=[ "res://.import/I wanna go fast.mp3-c555393918a5fe67d63a1c6e709e7316.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

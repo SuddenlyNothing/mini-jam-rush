@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
+[ext_resource path="res://Assets/Sounds/SFX/Car Hit.mp3" type="AudioStream" id=1]
 [ext_resource path="res://Scenes/Cars/Car.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/Cars/WheelMaterial.tres" type="PhysicsMaterial" id=4]
+
+[sub_resource type="AudioStreamRandomPitch" id=1]
+audio_stream = ExtResource( 1 )
 
 [node name="Car" type="RigidBody2D" groups=[
 "car",
 ]]
-contacts_reported = 10
+contacts_reported = 1
 contact_monitor = true
 script = ExtResource( 3 )
 
@@ -46,3 +50,9 @@ node_a = NodePath("../..")
 node_b = NodePath("..")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="BackWheel"]
+
+[node name="CarHit" type="AudioStreamPlayer" parent="."]
+stream = SubResource( 1 )
+bus = "SFX"
+
+[connection signal="body_entered" from="." to="." method="_on_Car_body_entered"]

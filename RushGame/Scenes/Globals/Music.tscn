@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Sounds/Music/I wanna go fast.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Scenes/Globals/Music.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sounds/Music/Car Surfin.mp3" type="AudioStream" id=3]
+
+[node name="Music" type="Node"]
+script = ExtResource( 2 )
+
+[node name="CarSurf" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 3 )
+bus = "Music"
+
+[node name="WannaFast" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 1 )
+bus = "Music"
