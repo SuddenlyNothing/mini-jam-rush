@@ -178,7 +178,7 @@ _global_script_class_icons={
 
 config/name="RushGame"
 run/main_scene="res://Scenes/UI/MainMenu.tscn"
-config/icon="res://icon.png"
+config/icon="res://Assets/Backup/Cop.png"
 
 [autoload]
 
